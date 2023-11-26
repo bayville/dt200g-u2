@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 2</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <!-- External Stylesheet and Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container row menu">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="/img/logo.svg" alt="Logotyp för Fotostugan, bild/film för webben"></a>
+            </div>
+            <!-- Menu Button -->
+            <button class="menu__btn open" id="open-menu">
+                <span class="menu__icon--open">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu__text">Meny</span>
+            </button>
+            <!-- Navigation -->
+            <nav class="nav" id="nav">
+                <!-- Close Menu Button -->
+                <button class="menu__btn close" id="close-menu">
+                    <span class="menu__icon--close">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng meny</span>
+                </button>
+                <!-- Navigation List -->
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Startsida</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Om mig</a></li>
+                    <li class="nav__item"><a href="bildbehandling.html" class="nav__link">Bildbehandling</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero -->
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 800px)" srcset="/img/liten_bild.jpg" type="image/jpg">
+                <source media="(min-width: 801px) and (max-width: 1500px)" srcset="/img/mellan_bild.jpg" type="image/jpg">
+                <source media="(min-width: 1501px)" srcset="/img/stor_bild.jpg" type="image/jpg">
+                <img src="/img/stor_bild.jpg" alt="Hockeyspelare trixar med pucken">
+            </picture>
+        </div>
+        <!-- Products -->
+        <section class="products container">
+            <h1>Senaste produkterna</h1>
+            <div class="products__row">
+                <!-- Product Images -->
+                <div class="product"><img class="product" src="img/frilaggning01.png" alt=""></div>
+                <div class="product"><img src="img/frilaggning02.png" alt=""></div>
+                <div class="product"><img src="img/frilaggning03.png" alt=""></div>
+            </div>
+        </section>
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <h3 class="cta__title">Webbutvecklings&shy;programmet <br>Mittuniversitetet</h3>
+                <a href="#" class="cta__link">Sök här</a>
+            </div>
+        </section>
+        <!-- Banner -->
+        <div class="banner">
+            <div class="container">
+                <img class="banner__image" src="/img/reklam_banner.gif" alt="">
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer Content -->
+        <p>Laborationsuppgift för kursen DT200G, Grafisk design för webb.</p>
+        <p>Copyright © Fredrik Eklund 2023</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

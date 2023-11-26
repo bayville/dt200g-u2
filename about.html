@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 2</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <!-- External Stylesheet and Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container row menu">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="/img/logo.svg" alt="Logotyp för Fotostugan, bild/film för webben"></a>
+            </div>
+            <!-- Menu Button -->
+            <button class="menu__btn open" id="open-menu">
+                <span class="menu__icon--open">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu__text">Meny</span>
+            </button>
+            <!-- Navigation -->
+            <nav class="nav" id="nav">
+                <!-- Close Menu Button -->
+                <button class="menu__btn close" id="close-menu">
+                    <span class="menu__icon--close">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng meny</span>
+                </button>
+                <!-- Navigation List -->
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Startsida</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Om mig</a></li>
+                    <li class="nav__item"><a href="bildbehandling.html" class="nav__link">Bildbehandling</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero -->
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 800px)" srcset="/img/liten_bild.jpg" type="image/jpg">
+                <source media="(min-width: 801px) and (max-width: 1500px)" srcset="/img/mellan_bild.jpg" type="image/jpg">
+                <img src="/img/stor_bild.jpg" alt="Hockeyspelare trixar med pucken">
+            </picture>
+        </div>
+        <!-- About -->
+        <section class="about container">
+            <h1>Om mig</h1>
+            <!-- About Content -->
+            <div class="about__content">
+                <!-- About Portrait -->
+                <div class="about__portrait"><img class="about__portrait" src="/img/portait.png" alt=""></div>
+                <!-- About Information -->
+                <div class="about__info">
+                    <!-- Personal Details -->
+                    <div>
+                        <h2 class="about__title">Fredrik Eklund</h2>
+                        <p class="about__text">Jag är 27 år och har nyligen flyttat till Gävle, tidigare bodde jag i Leksand. Är generellt väldigt intresserad av teknik i alla dess former. År 2018 påbörjade jag mina studier inom webbutveckling, men avbröt dem när jag fick jobb som kommunikatör för hockeylaget Leksands IF. Min tidigare roll och erfarenhet inom bild och film har varit till stor hjälp i denna kurs, då jag har tidigare erfarenhet av att arbeta med Adobe-sviten.</p>
+                    </div>
+                    <!-- Additional Details -->
+                    <div>
+                        <h2 class="about__title">Om uppgiften</h2>
+                        <p class="about__text">Det var en bra uppgift där man fick testa mycket nytt. Det var en lärorik övning att få skapa en webbplats utifrån designskisser och var för min del ett bra sätt att komma igång med HTML, CSS och JavaScript efter flera års frånvaro. Jag har fått lära mig en hel del nya tekniker som jag inte använt tidigare, som t.ex. användandet av picture-taggen och filformatet AVIF. Jag tyckte att det var lite krångligt att implementera picture-taggen, men känner mig mycket mer bekväm med det efter uppgiften. Det har också varit lite utmanande att följa designskisserna då jag oftast har varit van vid att få skapa alla delar i designen själv.
+                            Uppgiften har i det stora hela gått bra, men jag upplevde till slut lite tidspress då jag behövde jobba mer än vad jag hade planerat. Jag hade gärna lagt ner lite mer tid på att fixa vissa bilder.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer -->
+        <p>Laborationsuppgift för kursen DT200G, Grafisk design för webb.</p>
+        <p>Copyright © Fredrik Eklund 2023</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
